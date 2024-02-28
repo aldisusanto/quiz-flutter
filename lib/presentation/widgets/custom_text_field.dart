@@ -1,15 +1,39 @@
 import 'package:flutter/material.dart';
 
-class CustomTextField extends StatefulWidget {
-  const CustomTextField({super.key});
+class CustomTextField extends StatelessWidget {
+  final String hintText;
+  final TextEditingController controller;
+  final TextInputType keyboardType;
+  final IconData? prefixIcon;
+  final IconData? suffixIcon;
+  final bool obscureText;
+  final Function(String)? onChanged;
 
-  @override
-  State<CustomTextField> createState() => _CustomTextFieldState();
-}
+  const CustomTextField(
+      {super.key,
+      required this.hintText,
+      required this.controller,
+      this.keyboardType = TextInputType.text,
+      this.prefixIcon,
+      this.suffixIcon,
+      this.onChanged,
+      this.obscureText = false});
 
-class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return TextFormField(
+      controller: controller,
+      obscureText: obscureText,
+      keyboardType: keyboardType,
+      onChanged: onChanged,
+      decoration: InputDecoration(
+        hintText: hintText,
+        hintStyle: const TextStyle(
+            fontFamily: "Poppins", fontWeight: FontWeight.normal),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+      ),
+    );
   }
 }

@@ -76,10 +76,8 @@ class WelcomeScreen extends StatelessWidget {
               backgroundColor: Colors.blueAccent,
               textColor: Colors.white,
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const SignUpScreen()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SignUpScreen()));
               },
             ),
             /* Sign In Button To Screen SignIn*/
