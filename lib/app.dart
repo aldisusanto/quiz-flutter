@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:quiz/presentation/screens/welcome/intro_screen.dart';
 import 'package:quiz/utils/theme/QuizAppTheme.dart';
 
 class App extends StatelessWidget {
@@ -6,10 +8,12 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       themeMode: ThemeMode.system,
       theme: QuizAppTheme.lightTheme,
       darkTheme: QuizAppTheme.darkTheme,
+      debugShowCheckedModeBanner: false,
+      home: const IntroScreen(),
     );
   }
 }

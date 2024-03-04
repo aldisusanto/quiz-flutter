@@ -3,8 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz/presentation/styles/AppTextStyles.dart';
 import 'package:quiz/presentation/widgets/button_widget.dart';
 import 'package:quiz/presentation/widgets/google_button_widget.dart';
+import 'package:quiz/utils/constans/image_string.dart';
 
-import '../signup/signup_screen_1.dart';
+import '../../../presentation/screens/signup/signup_screen_1.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -18,7 +19,7 @@ class WelcomeScreen extends StatelessWidget {
           children: [
             const SizedBox(height: 100),
             SvgPicture.asset(
-              'assets/ic_quiz.svg',
+              QuizImages.quizThumbWelcome,
               width: 100,
             ),
             const SizedBox(height: 20),
@@ -40,7 +41,7 @@ class WelcomeScreen extends StatelessWidget {
             /* Google Sign In Button*/
             SignInButton(
               text: "Continue with Google",
-              icon: 'assets/ic_google.png',
+              icon: QuizImages.google,
               onPressed: () {
                 print('Google Sign In button clicked');
               },
@@ -49,20 +50,20 @@ class WelcomeScreen extends StatelessWidget {
             /* Apple Sign In Button*/
             SignInButton(
               text: "Continue with Apple",
-              icon: 'assets/ic_apple.png',
+              icon: QuizImages.apple,
               onPressed: () {},
             ),
 
             /*Facebook Sign In Button*/
             SignInButton(
               text: "Continue with Facebook",
-              icon: 'assets/ic_facebook.png',
+              icon: QuizImages.facebook,
               onPressed: () {},
             ),
             /*Twitter Sign In Button*/
             SignInButton(
               text: "Continue with Twitter",
-              icon: 'assets/ic_twitter.png',
+              icon: QuizImages.twitter,
               onPressed: () {},
             ),
             // const ButtonWidget(text: "Sign Up", color: Colors.blue)

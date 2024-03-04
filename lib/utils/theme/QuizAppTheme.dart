@@ -5,6 +5,7 @@ import 'package:quiz/utils/theme/custom_theme/checkbox_theme.dart';
 import 'package:quiz/utils/theme/custom_theme/chip_theme.dart';
 import 'package:quiz/utils/theme/custom_theme/elevated_button_theme.dart';
 import 'package:quiz/utils/theme/custom_theme/outline_button_theme.dart';
+import 'package:quiz/utils/theme/custom_theme/text_button_theme.dart';
 import 'package:quiz/utils/theme/custom_theme/text_field_theme.dart';
 import 'package:quiz/utils/theme/custom_theme/text_theme.dart';
 
@@ -22,6 +23,7 @@ class QuizAppTheme {
       bottomSheetTheme: QuizBottomSheetTheme.lightBottomSheetTheme,
       checkboxTheme: QuizCheckBoxTheme.lightCheckboxTheme,
       chipTheme: QuizChipTheme.lightChipTheme,
+      textButtonTheme: QuizTextButtonTheme.lightTextButtonTheme,
       inputDecorationTheme: QuizTextFieldTheme.lightInputDecorationTheme,
       outlinedButtonTheme: QuizOutlineButtonTheme.lightOutlineButtonTheme,
       elevatedButtonTheme: QuizElevatedButtonTheme.lightElevatedButtonTheme);
@@ -36,6 +38,7 @@ class QuizAppTheme {
       bottomSheetTheme: QuizBottomSheetTheme.darkBottomSheetTheme,
       checkboxTheme: QuizCheckBoxTheme.darkCheckboxTheme,
       chipTheme: QuizChipTheme.darkChipTheme,
+      textButtonTheme: QuizTextButtonTheme.darkTextButtonTheme,
       inputDecorationTheme: QuizTextFieldTheme.darkInputDecorationTheme,
       outlinedButtonTheme: QuizOutlineButtonTheme.darkOutlineButtonTheme,
       elevatedButtonTheme: QuizElevatedButtonTheme.darkElevatedButtonTheme);

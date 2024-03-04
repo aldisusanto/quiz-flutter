@@ -1,4 +1,4 @@
-class QuizSizes{
+class QuizSizes {
   QuizSizes._();
 
   /* Padding & Margin*/
@@ -19,7 +19,6 @@ class QuizSizes{
   static const double fontSizeMd = 16.0;
   static const double fontSizeLg = 18.0;
 
-
   /* Button*/
   static const double buttonHeight = 18.0;
   static const double buttonRadius = 12.0;
@@ -30,6 +29,7 @@ class QuizSizes{
 
   /* Image Size*/
   static const double imageThumbSize = 80.0;
+  static const double imageLogoSize = 120.0;
 
   /* Default Spacing*/
   static const double defaultSpace = 24.0;
